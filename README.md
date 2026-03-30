@@ -1,26 +1,42 @@
-# Aplikasi-Pengenalan-Wajah-Untuk-Membuka-Pintu-Berbasis-Raspberry-Pi
-Aplikasi pengenalan wajah untuk membuka servo penahan pintu berbasis Raspberry Pi. Aplikasi dibuat menggunakan bahasa pemrograman python.
-Untuk pengenalan wajah digunakah fitur face recognition yang terdapat pada library opencv.
-Algoritma pengenalan wajah yang digunakan adalah algoritma local binary pattern histogram
+# Smart Door Lock dengan Pengenalan Wajah Berbasis Raspberry Pi
 
-#Menghubungkan Dan Mengaktifkan Kamera
-kamera yang digunakan adalah kamera module v2. langkah - langkah untuk memasang dan mengaktifkan kamera adalah sebagai berikut :
-1.Cari port kamera dan menghubungkan kamera.
-2.Start up Pi tersebut.
-3.Buka Configuration Tool Raspberry Pi dari menu utama.
-4.Pastikan kamera software diaktifkan.
-5.Setelah itu reboot Pi Anda untuk memulai.
+Aplikasi pengenalan wajah (*face recognition*) untuk membuka servo penahan pintu otomatis yang dioperasikan menggunakan Raspberry Pi. Proyek ini dibangun dengan bahasa pemrograman **Python** dan memanfaatkan *library* **OpenCV** untuk pemrosesan visi komputer. Algoritma pengenalan wajah utama yang digunakan dalam sistem ini adalah **Local Binary Pattern Histogram (LBPH)**.
 
-#Install opencv
-opencv merupakan library open source computer vision. 
-Pada aplikasi ini digunakan algoritma untuk mengenali wajah dengan menggunakan library opencv
-Algoritma yang digunakan adalah local binary pattern histogram. 
+---
 
-Dokumentasi opencv dapat dilihat pada link berikut:
-https://opencv.org/about/
+## 📹 Video Demo Aplikasi
 
-langkah - langkah untuk menginstall opencv dapat dilihat pada link berikut:
-https://onedrive.live.com/view.aspx?resid=2AAE05B692B45603!149547&ithint=file%2cpptx&authkey=!AMJoTWk2pvH73f8
+Saksikan bagaimana aplikasi ini bekerja secara langsung:
+[![Video Demo](https://img.youtube.com/vi/lZdOjA3wDoU/0.jpg)](https://www.youtube.com/watch?v=lZdOjA3wDoU&t=8s)
+*(Klik gambar atau link di atas untuk menonton video di YouTube)*
 
-Video demo aplikasi:
-https://www.youtube.com/watch?v=YruOGBSZ4RA
+---
+
+## 🛠️ Persiapan Perangkat Keras (Hardware)
+
+Sistem ini menggunakan **Kamera Modul V2** dari Raspberry Pi. Berikut adalah langkah-langkah untuk menghubungkan dan mengaktifkan kamera pada Raspberry Pi Anda:
+
+1. Cari *port* kamera pada board Raspberry Pi, lalu hubungkan kabel *ribbon* kamera dengan benar.
+2. Nyalakan (*start up*) Raspberry Pi tersebut.
+3. Buka **Configuration Tool** Raspberry Pi dari menu utama (atau jalankan perintah `sudo raspi-config` di terminal).
+4. Masuk ke menu antarmuka (*Interface Options*) dan pastikan fitur **Camera** telah diaktifkan (*Enabled*).
+5. Setelah itu, *reboot* (hidupkan ulang) Raspberry Pi Anda untuk menerapkan pengaturan.
+
+---
+
+## 💻 Persiapan Perangkat Lunak (Software)
+
+### Instalasi OpenCV
+OpenCV adalah *library open source* yang sangat populer untuk kebutuhan *computer vision*. Pada proyek ini, OpenCV digunakan secara ekstensif untuk menjalankan algoritma pengenalan wajah LBPH.
+
+* **Dokumentasi Resmi OpenCV:** [https://opencv.org/about/](https://opencv.org/about/)
+* **Panduan Instalasi OpenCV:** Untuk langkah-langkah detail mengenai cara menginstal OpenCV di Raspberry Pi, silakan unduh dan lihat panduan presentasi pada [tautan OneDrive berikut](https://onedrive.live.com/view.aspx?resid=2AAE05B692B45603!149547&ithint=file%2cpptx&authkey=!AMJoTWk2pvH73f8).
+
+---
+
+## 🚀 Teknologi yang Digunakan
+
+* **Bahasa Pemrograman:** Python
+* **Hardware:** Raspberry Pi, Kamera Modul V2, Motor Servo
+* **Computer Vision Library:** OpenCV
+* **Algoritma Pengenalan Wajah:** Local Binary Pattern Histogram (LBPH)
